@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Name Entry App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h1>Name Entry System</h1>
+            
+            <div class="input-section">
+                <input 
+                    type="text" 
+                    id="nameInput" 
+                    placeholder="Enter your name"
+                    autocomplete="off"
+                >
+                <button id="submitBtn">Enter</button>
+            </div>
+
+            <div id="message" class="message"></div>
+
+            <div class="names-section">
+                <h2>Stored Names (<span id="count">0</span>)</h2>
+                <div id="namesList" class="names-list">
+                    <p class="empty-state">No names stored yet</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="info-card">
+            <h3>Architecture</h3>
+            <ul>
+                <li><strong>Frontend:</strong> HTML, CSS, JavaScript</li>
+                <li><strong>Backend:</strong> Node.js + Express</li>
+                <li><strong>Database:</strong> SQLite</li>
+                <li><strong>API:</strong> RESTful endpoints</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
